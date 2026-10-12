@@ -28,7 +28,6 @@ diving into the rest - see [Why two processes instead of one](#why-two-processes
 - [Running with Docker](#running-with-docker)
 - [Tests](#tests)
 - [A note on Redis on this dev machine](#a-note-on-redis-on-this-dev-machine)
-- [Transcript](#transcript)
 - [Written answers](#written-answers)
 
 ## Highlights
@@ -528,11 +527,6 @@ above. Rather than fight Windows service permissions to remove it, a current Red
 build runs as a plain user process on port 6380 instead, and `.env` on this machine points
 there. None of this affects anyone else running the project - point `REDIS_HOST` /
 `REDIS_PORT` at whatever Redis you actually have.
-
-## Transcript
-
-[`transcript.md`](./transcript.md) holds a recorded session of an MCP client driving all
-four tools end to end, including a validation failure and a cancellation.
 
 ---
 
